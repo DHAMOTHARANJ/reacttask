@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bglayer{
+  margin-top: 5rem;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  margin-left: 2rem;
+  transition: transform 0.4s;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bglayer:hover{
+  -ms-transform: scale(1.04); /* IE 9 */
+  -webkit-transform: scale(1.04); /* Safari 3-8 */
+  transform: scale(1.04); 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bglayer:hover{
+  
+}
+.cartContent{
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 16px;
+}
+#lines{
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  min-width: 0;
+  word-wrap: break-word;
+  width: 264px;
+}
+#button{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+button{
+  width: 100%;
+  height: 50px;
+  font-size: 80%;
+  border-radius: 5rem;
+  border: none;
+  background-color: #0062E6;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: all 0.2s;
+  cursor: pointer;
+  transition: 0.5s;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#btn:hover{
+  opacity: 1.5;
 }
+hr{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#access{
+  color: #6c757d!important;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#price{
+  font-size: 3rem;
+  margin: 0;
+  align-items: center;
+  line-height: 1.2;
+  font-weight: 500;
+}
+#price span{
+  font-size: .8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 650px) and (max-width: 992px){
+  .bglayer{
+    /* width: 516px; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    width: 516px;
+
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 450px) and (max-width: 650px){
+  .bglayer{
+    width: 400px;
+    
   }
 }
